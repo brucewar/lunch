@@ -1,0 +1,41 @@
+<%-
+Loader()
+.css('/lib/Kalendae/Kalendae/kalendae.css')
+.css('/dist/css/index.css')
+.js('/dist/js/index.bundle.js')
+.done()
+%>
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-sm-offset-2 col-sm-8">
+			<div class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-2">档次：</label>
+					<div class="col-sm-10">
+						<label class="radio-inline"><input type="radio" name="level" value="A" checked>A</label>
+						<label class="radio-inline"><input type="radio" name="level" value="B">B</label>
+						<label class="radio-inline"><input type="radio" name="level" value="C">C</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">姓名：</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">订餐日期：</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="date" readonly>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-3">
+						<button class="btn btn-primary" id="book">订吧！</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="table-responsive" id="table"></div>
+</div>
